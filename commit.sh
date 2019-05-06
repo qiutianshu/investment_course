@@ -1,6 +1,6 @@
 #!/bin/bash
-current_time='date+%y%m%d%H%M%S'
-echo -e $current_time
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "${time}"
 git add *
-git commit -m $current_time
+git commit -m "${time}"
 git push -u origin master
